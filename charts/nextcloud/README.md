@@ -5,7 +5,7 @@
 ## TL;DR;
 
 ```console
-helm repo add nextcloud https://nextcloud.github.io/helm/
+helm repo add nextcloud https://iraangeles.github.io/helm-nextcloud/
 helm install my-release nextcloud/nextcloud
 ```
 
