@@ -7,13 +7,13 @@
 To install the repo just run:
 
 ```bash
-helm repo add nextcloud https://nextcloud.github.io/helm/
+helm repo add nextcloud https://github.com/IraAngeles/helm-nextcloud.git
 helm repo update
 ```
 
 ### Helm Charts
 
-* [nextcloud](https://nextcloud.github.io/helm/)
+* [nextcloud](https://github.com/IraAngeles/helm-nextcloud.git)
 
   ```bash
   helm install my-release nextcloud/nextcloud
