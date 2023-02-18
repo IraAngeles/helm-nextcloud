@@ -40,6 +40,6 @@ entries:
     - https://github.com/nextcloud/helm
     - https://github.com/nextcloud/docker
     urls:
-    - https://github.com/IraAngeles/helm-nextcloud/releases/download/nextcloud-3.4.7/nextcloud-3.4.7.tgz/charts/nextcloud-3.4.7.tgz
+    - https://github.com/IraAngeles/helm-nextcloud/releases/download/nextcloud-3.4.7/nextcloud-3.4.7.tgz
     version: 3.4.7
 generated: "2023-02-18T22:56:07.544285153+08:00"
