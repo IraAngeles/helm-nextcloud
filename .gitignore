@@ -5,3 +5,4 @@
 
 # Helm resources
 charts/*/charts
+charts/*.tgz

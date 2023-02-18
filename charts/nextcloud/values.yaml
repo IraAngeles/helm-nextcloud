@@ -256,9 +256,9 @@ externalDatabase:
   ## Use a existing secret
   existingSecret:
     enabled: false
-    # secretName: nameofsecret
-    # usernameKey: db-username
-    # passwordKey: db-password
+    secretName: nextcloud
+    usernameKey: db-username
+    passwordKey: db-password
 
 ##
 ## MariaDB chart configuration
@@ -282,7 +282,7 @@ mariadb:
       enabled: false
       # Use an existing Persistent Volume Claim (must be created ahead of time)
       # existingClaim: ""
-      # storageClass: ""
+      storageClass: ""
       accessMode: ReadWriteOnce
       size: 8Gi
 
@@ -354,7 +354,7 @@ persistence:
   ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
   ##   GKE, AWS & OpenStack)
   ##
-  # storageClass: "-"
+  storageClass: "-"
 
   ## A manually managed Persistent Volume and Claim
   ## Requires persistence.enabled: true
@@ -370,7 +370,7 @@ persistence:
     enabled: false
     subPath:
     annotations: {}
-    # storageClass: "-"
+    storageClass: "-"
     # existingClaim:
     accessMode: ReadWriteOnce
     size: 8Gi

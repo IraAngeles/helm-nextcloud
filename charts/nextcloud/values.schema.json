@@ -39,6 +39,15 @@
                     "properties": {
                         "enabled": {
                             "type": "boolean"
+                        },
+                        "passwordKey": {
+                            "type": "string"
+                        },
+                        "secretName": {
+                            "type": "string"
+                        },
+                        "usernameKey": {
+                            "type": "string"
                         }
                     }
                 },
@@ -180,6 +189,9 @@
                                     "type": "boolean"
                                 },
                                 "size": {
+                                    "type": "string"
+                                },
+                                "storageClass": {
                                     "type": "string"
                                 }
                             }
@@ -473,12 +485,18 @@
                         "size": {
                             "type": "string"
                         },
+                        "storageClass": {
+                            "type": "string"
+                        },
                         "subPath": {
                             "type": "null"
                         }
                     }
                 },
                 "size": {
+                    "type": "string"
+                },
+                "storageClass": {
                     "type": "string"
                 }
             }
