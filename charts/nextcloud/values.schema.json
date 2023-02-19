@@ -100,7 +100,24 @@
             "type": "object",
             "properties": {
                 "annotations": {
-                    "type": "object"
+                    "type": "object",
+                    "properties": {
+                        "cert-manager.io/cluster-issuer": {
+                            "type": "string"
+                        },
+                        "kubernetes.io/tls-acme": {
+                            "type": "string"
+                        },
+                        "nginx.ingress.kubernetes.io/proxy-body-size": {
+                            "type": "string"
+                        },
+                        "nginx.ingress.kubernetes.io/server-snippet": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "className": {
+                    "type": "string"
                 },
                 "enabled": {
                     "type": "boolean"
@@ -113,6 +130,23 @@
                 },
                 "pathType": {
                     "type": "string"
+                },
+                "tls": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "hosts": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "secretName": {
+                                "type": "string"
+                            }
+                        }
+                    }
                 }
             }
         },
